@@ -1,0 +1,36 @@
+h1 {
+    color:blue;
+    font-weight:400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 45px;
+}
+
+h2 {
+    color:blue;
+    font-weight:200;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 45px;
+}
+
+.contenedor {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*justify-content: center;*/
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.columnas {
+
+    padding: 20px;
+    margin: 0 20px;    
+}
+
+.formatoParrafo {
+
+    text-align: justify;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
