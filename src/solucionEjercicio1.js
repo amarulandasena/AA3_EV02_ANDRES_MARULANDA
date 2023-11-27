@@ -9,7 +9,7 @@ const Ejercicio1 = () => {
         let opcion = parseInt(prompt("Seleccione el área o perímetro que desea calcular: "));
 
         /** validamos que sea un dato correcto. */
-        if (typeof (opcion) != 'number') {
+        if (typeof opcion != 'number') {
             continue;
         };
 
