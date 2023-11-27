@@ -12,6 +12,7 @@ h2 {
     margin-left: 45px;
 }
 
+/* La regla contenedor me permite dividir el bloque en dos columnas*/
 .contenedor {
 
     display: grid;
@@ -27,6 +28,7 @@ h2 {
     margin: 0 20px;    
 }
 
+/* La regla me permite darle formato a los enunciados de los ejercicios*/
 .formatoParrafo {
 
     text-align: justify;

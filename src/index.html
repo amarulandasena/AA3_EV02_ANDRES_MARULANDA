@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="es"> <!-- Indicamos que el documento HTML está escrito en español-->
     <head>
         <meta charset="UTF-8"/>
         <meta name="application-name" content="220501093-AA3-EV02"/>
@@ -8,54 +8,86 @@
         <meta name="description" content="Aplicación para resolver 4 ejercicios de introducción a javascript"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+        <!-- Enlace a la hoja de estilos-->
         <link rel="stylesheet" href="../css/style.css" type="text/css" hreflang="es" media="all"/>
 
+        <!-- Enlace al script para resolver los ejercicios-->
+        <script type="text/javascript" src="./solucionEjercicios.js" async></script>
+
+        <!-- Título que aparece en la pestaña del navegador-->
         <title>
             AA3-EV02-Ejercicios
         </title>
     </head>
+
     <body>
         <div>
             <h1>
-                RESOLUCIÓN DE PROBLEMAS ALGORÍTMICOS.
+                <b>RESOLUCIÓN DE PROBLEMAS ALGORÍTMICOS.</b>
             </h1>
             <h2>
-                Por: ANDRES FELIPE MARULANDA
+                <b>Por: ANDRES FELIPE MARULANDA</b>
             </h2>
         </div>
         
+        <!-- Bloque o fila dividido en dos columnas-->
         <div class="contenedor">
+
+            <!-- Ejercicio número uno, columna número uno-->
             <div class="columnas">
-                <p class="formatoParrafo">1. Calcular el área o perímetro de algunas figuras planas según la siguiente tabla:</p>
-                <img src="../img/tabla1.JPG" height="350px" width="450px" alt="Tabla 1: Área y perímetro de figuras planas">
+                <p class="formatoParrafo"><b>1.</b> Calcular el área o perímetro de algunas figuras planas según la siguiente tabla:</p>
+                <div>
+                    <img src="../img/tabla1.JPG" height="350px" width="450px" alt="Tabla 1: Área y perímetro de figuras planas">
+                    <ol class="formatoParrafo">
+                        <li>Calcular perímetro del tríangulo.</li>
+                        <li>Calcular área del triangulo.</li>
+                        <li>Calcular perímetro del rectángulo.</li>
+                        <li>Calcular área del rectángulo.</li>
+                        <li>Calcular perímetro del cuadrado.</li>
+                        <li>Calcular área del cuadrado.</li>
+                        <li>Calcular perímetro del círculo.</li>
+                        <li>Calcular área del círculo.</li>   
+                    </ol> 
+                    
+                    <!-- Botón para llamar la función para resolver el ejercicio-->
+                    <button type="button" onclick="Ejercicio1()">
+                            Para resolver el ejercicio 1, pulse aquí
+                    </button>
+                </div>    
             </div>
 
-            <div class="columnas">
+            <div class="columnas"> <!-- Columna número dos-->
+                <!-- Ejercicio número dos-->
                 <p class="formatoParrafo">
-                    3. Escriba un programa que lea dos vectores de números enteros ordenados ascendentemente 
-                    y luego produzca la lista ordenada de la mezcla de los dos, por ejemplo, si los dos arreglos
-                    tienen los números 1 3 6 9 17 y 2 4 10 17, respectivamente, la lista de números en la pantalla 
-                    debe ser 1 2 3 4 6 9 10 17 17. Limite los vectores a un tamaño de 5 y debe validar en cada ingreso
-                    que realmente se estén ingresando los datos de forma ascendente.
-                </p>    
-            </div>
-        </div>
-
-        <div class="contenedor">
-            <div class="columnas">
-                <p class="formatoParrafo">
-                    2. Desarrollar un programa que permita almacenar las edades de un grupo de 10 personas en un vector 
+                    <b>2.</b> Desarrollar un programa que permita almacenar las edades de un grupo de 10 personas en un vector 
                     de enteros y luego determine la cantidad de personas que son menores de edad, mayores de edad, cuántos 
                     adultos mayores, la edad más baja, la edad más alta y el promedio de edades ingresadas. Para el ejercicio 
                     anterior suponga que un adulto mayor debe tener una edad igual o superior a 60. Debe validar para cada
                     ingreso que los valores estén en un rango entre 1 y 120 años. En caso de error deberá notificar y solicitar
                     un nuevo valor.
                 </p>
-            </div>
-
-            <div class="columnas">
+                <!-- Botón para llamar la función para resolver el ejercicio-->
+                <button type="button" onclick="">
+                    Para resolver el ejercicio 2, pulse aquí
+                </button>
+                
+                <!-- Ejercicio número tres-->
                 <p class="formatoParrafo">
-                    4. Una emisora con presencia en diferentes ciudades desea conocer el rating de canciones y cantantes más 
+                    <b>3.</b> Escriba un programa que lea dos vectores de números enteros ordenados ascendentemente 
+                    y luego produzca la lista ordenada de la mezcla de los dos, por ejemplo, si los dos arreglos
+                    tienen los números [1 3 6 9 17] y [2 4 10 17], respectivamente, la lista de números en la pantalla 
+                    debe ser [1 2 3 4 6 9 10 17 17]. Limite los vectores a un tamaño de 5 y debe validar en cada ingreso
+                    que realmente se estén ingresando los datos de forma ascendente.
+                </p> 
+                <!-- Botón para llamar la función para resolver el ejercicio-->
+                <button type="button" onclick="">
+                    Para resolver el ejercicio 3, pulse aquí
+                </button>
+
+                <!-- Ejercicio número cuatro-->
+                <p class="formatoParrafo">
+                    <b>4.</b> Una emisora con presencia en diferentes ciudades desea conocer el rating de canciones y cantantes más 
                     escuchados (sonados) en este semestre del año. Por lo tanto, se ha pedido a estudiantes del SENA del programa 
                     de tecnólogo en análisis y desarrollo de software desarrollar una solución que permita conocer la respuesta de 
                     6 personas con relación a sus gustos musicales. Con fines administrativos y realizar una rifa entre las personas 
@@ -66,7 +98,11 @@
                     a. Agregar una persona con los datos que se listan anteriormente.<br>
                     b. Mostrar la información personal de una persona particular por medio de su posición en el vector.
                 </p>
-            </div>
+                <!-- Botón para llamar la función para resolver el ejercicio-->
+                <button type="button" onclick="">
+                    Para resolver el ejercicio 4, pulse aquí
+                </button>
+            </div>    
         </div>
     </body>
 </html>
