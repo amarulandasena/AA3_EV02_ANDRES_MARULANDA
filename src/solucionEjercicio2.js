@@ -8,22 +8,22 @@ const Ejercicio2 = () => {
     /** Ciclo para el ingreso de las edades. */
     let sumaEdades = 0;                                         /** Acumular las edades ingresadas para calcular el promedio */
     
-    for (let i = 0; i < 10; i++){
+    let contadorEdades = 0
+    while (contadorEdades < 10) {
         
         let edad = parseInt(prompt("Ingrese la edad: "));       /** Variable para almacenar cada una de las edades ingresadas */
 
         if (typeof edad != 'number'){                           /** Validamos el ingreso de datos numéricos */
-            i--;
             continue;
         };
 
         if ((edad < 1) || (edad > 120)){                        /** Validar que la edad este dentro del rango correcto */
-            i--;
             continue;
         }; 
         
         edades.push(edad);                                      /** Agregamos una edad al vector */
         sumaEdades += edad;                                     /** Sumamos la edad ingresada */
+        contadorEdades += 1;                                    /** Incrementamos la variable de control */
 
     };
 
@@ -64,7 +64,7 @@ const Ejercicio2 = () => {
     alert("Menores de edad: " + menoresEdad.length + "\n" + 
     "Mayores de edad: " + mayoresEdad.length + "\n" +
     "Adultos mayores: " + adultosMayores + "\n" +
-    "Edad menor: " + edadMenor + "\n" + 
-    "Edad mayor: " + edadMayor + "\n" +
-    "Promedio edades: " + promedioEdades.toFixed(3));
+    "Edad menor: " + edadMenor + " años" + "\n" + 
+    "Edad mayor: " + edadMayor + " años" + "\n" +
+    "Promedio edades: " + promedioEdades.toFixed(2) + " años");
 };

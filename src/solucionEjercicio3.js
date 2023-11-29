@@ -17,7 +17,12 @@ const Ejercicio3 = () => {
         let posicion = 0;                                       /** Indicar la posición del vector donde se encuentra el dato */
         while (contador < 5) {                                  /** Terminamos de cargar el vector. */
             numero  = parseInt(prompt("Ingrese un número mayor que el anterior: ")) ;
-            vector3.push(numero);
+            if (typeof numero != 'number'){
+                continue;
+            }else{
+                vector3.push(numero);
+            }
+            
 
             if (vector3[posicion] > vector3[contador]) {
                 alert("Error, ingrese un número mayor.");
@@ -50,8 +55,8 @@ const Ejercicio3 = () => {
         };
     };
 
-    alert("[" + vector1 + "]" + "\n" +
-          "[" + vector2 + "]" + "\n" +
-          "[" + combinacionVectores + "]");
+    alert("A = " + "[" + vector1 + "]" + "\n" +
+          "B = " + "[" + vector2 + "]" + "\n" +
+          "Combinación = " + "[" + combinacionVectores + "]");
     
 };
