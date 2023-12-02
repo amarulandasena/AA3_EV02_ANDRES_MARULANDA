@@ -6,13 +6,17 @@ const Ejercicio1 = () => {
     while (true) {
 
         /** Pedimos al usuario seleccionar una opción. Hacemos un casting del dato ingresado desde el teclado. */
-        let opcion = parseInt(prompt("Seleccione el área o perímetro que desea calcular: "));
+        let input = prompt("Seleccione el área o perímetro que desea calcular: ");
+        let opcion = parseInt(input);
 
         /** Validamos que sea un dato correcto. */
         if (typeof opcion != 'number') {
             continue;
         };
 
+        if (input == null){
+            break;
+        };
 
         if (opcion == 1) { /** Perímetro del tríangulo. */
             let ladoA = parseFloat(prompt("Ingrese la longitud del lado A en cm: "));
@@ -69,6 +73,7 @@ const Ejercicio1 = () => {
 
         } else if (opcion == 9) { /** Opción para salir de la solución del ejercicio */
             break;
+
         } else { /** Opción que permite regresar al menú al ingresar una opción invalida. */
             continue;
         };

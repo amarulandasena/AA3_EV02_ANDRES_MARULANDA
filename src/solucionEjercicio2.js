@@ -11,7 +11,12 @@ const Ejercicio2 = () => {
     let contadorEdades = 0
     while (contadorEdades < 10) {
         
-        let edad = parseInt(prompt("Ingrese la edad: "));       /** Variable para almacenar cada una de las edades ingresadas */
+        let input = prompt("Ingrese la edad: ");
+        let edad = parseInt(input);                             /** Variable para almacenar cada una de las edades ingresadas */
+
+        if (input == null){
+            break;
+        };
 
         if (typeof edad != 'number'){                           /** Validamos el ingreso de datos numéricos */
             continue;
